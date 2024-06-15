@@ -153,21 +153,21 @@ with md_pose.Pose(min_detection_confidence=0.5,min_tracking_confidence=0.5) as p
         if len(lmList1) != 0: # if no model is detected
             
             if ((lmList1[12][2] - lmList1[14][2])>=5 and (lmList1[11][2] - lmList1[13][2])>=5):
-                player_speed = -7 # postion of both sholder below elbow
+                player_speed = 7 # postion of both sholder below elbow
             
             if ((lmList1[12][2] - lmList1[14][2])<=5 and (lmList1[11][2] - lmList1[13][2])<=5) :
                  # postion of both sholder abow elbow
-                player_speed = 7
+                player_speed = -7
                 
         # Update player2 speed based on template matching location
         if len(lmList2) != 0: # if no model is detected
             
             if ((lmList2[12][2] - lmList2[14][2])>=5 and (lmList2[11][2] - lmList2[13][2])>=5):
                  # postion of both sholder below elbow
-                opponent_speed = -7
+                opponent_speed = 7
             if ((lmList2[12][2] - lmList2[14][2])<=5 and (lmList2[11][2] - lmList2[13][2])<=5) :
              # postion of both sholder abow elbow
-                opponent_speed = 7
+                opponent_speed = -7
 
 
         ball_animation()
