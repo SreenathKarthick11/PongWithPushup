@@ -16,7 +16,7 @@ count2=0
 position1=None
 position2=None
 # camera and videcapture
-address1="http://100.75.141.213:8080/video"
+address1="http://100.75.***.***:8080/video"  # every ip address in different so enter yours
 # address2="http://100.91.139.67:8080/cap"
 video1 = cv2.VideoCapture(0) # number stands for which web cam u want to use,if file name we can see the video
 video2=cv2.VideoCapture(0) 
