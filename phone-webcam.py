@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 # camera and videcapture
-address1="http://100.75.141.213:8080/video"
+address1="http://100.75.***.***:8080/video"  # enter your ip address
 video = cv2.VideoCapture(0) # number stands for which web cam u want to use,if file name we can see the video
 video.open(address1)
 while True:
